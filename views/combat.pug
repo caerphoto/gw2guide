@@ -80,20 +80,20 @@ block content
     the mouse pointer over it and a box appears detailing how much damage the
     skill does, its range, and so on. Here's an example:
 
-  p.img: img(src='/images/skill-tooltip.jpg')
+  p.img: img(src=basePath+'images/skill-tooltip.jpg')
 
   p.
     The icons in the top right are important:
 
   dl.img
-    dt: img(src='/images/skill-activation-time.png')
+    dt: img(src=basePath+'images/skill-activation-time.png')
     dd.
       #[dfn Activation time]: also known as #[i cast time], this is simply how
       long it takes to activate a skill, in seconds. If this is not present, it
       means the skill can be cast instantly,
       #[em even during the activation of another skill].
 
-    dt: img(src='/images/skill-recharge-time.png')
+    dt: img(src=basePath+'images/skill-recharge-time.png')
     dd.
       #[dfn Recharge time]: also known as #[i cooldown], this is how long you
       must wait after activating a skill before you can use it again. If this is
@@ -106,9 +106,9 @@ block content
     On the left, in range; on the right, out of range:
 
   p.img
-    img(src='/images/skill-in-range.png')
+    img(src=basePath+'images/skill-in-range.png')
     | &nbsp;
-    img(src='/images/skill-out-of-range.png')
+    img(src=basePath+'images/skill-out-of-range.png')
 
   p.
     It can be a little tricky to get used to what the different numbers mean.
@@ -118,7 +118,7 @@ block content
   p.
     Some skills have a red crosshair at the bottom of the icon, like this:
 
-  p.img: img(src='/images/skill-ground-targeted.png')
+  p.img: img(src=basePath+'images/skill-ground-targeted.png')
 
   p.
     This means you must choose where to aim them on the ground; as you might
@@ -138,7 +138,7 @@ block content
 
   dl
     dt
-      img(src='/images/boon-icon-vigor.png')
+      img(src=basePath+'images/boon-icon-vigor.png')
       |  Boons
     dd.
       These are short-term effects represented by an white icon on an orange
@@ -149,7 +149,7 @@ block content
       Regeneration, Might and so on.
 
     dt
-      img(src='/images/buff-icon-food.png')
+      img(src=basePath+'images/buff-icon-food.png')
       |  Buffs
     dd.
       These are Profession-specific effects, such a Guardian's
@@ -160,7 +160,7 @@ block content
 
   dl
     dt
-      img(src='/images/condition-icon-burning.png')
+      img(src=basePath+'images/condition-icon-burning.png')
       |  Conditions
     dd.
       Like Boons these are
@@ -171,7 +171,7 @@ block content
       and so on.
 
     dt
-      img(src='/images/debuff-icon-revealed.png')
+      img(src=basePath+'images/debuff-icon-revealed.png')
       |  Debuffs
     dd.
       Like Buffs, these appear as full-colour icons, and can come from a
@@ -186,7 +186,7 @@ block content
     support your allies with Might, increasing the damage of their attacks, or
     provide Protection so they take less damage? Examine your weapon and
     utility skills and how they're affected by
-    #[a(href='/traits-skills') traits and skills]
+    #[a(href=basePath+'traits-skills') traits and skills]
     to determine what works best for you.
 
   h2 Controlling enemies
