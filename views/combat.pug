@@ -1,0 +1,172 @@
+extends layout
+
+block content
+  p.
+    This section explains the mechanics of combat in Guild Wars 2. Although the
+    game might look similar to many other MMOs, there are a few differences that
+    are not immediately obvious, but which nevertheless are important.
+
+  h2 Health
+
+  p.
+    Much like in other MMOs, combat in Guild Wars 2 is
+    about hitting enemies to reduce their health bar (commonly referred to as
+    their HP, short for 'hit points') to 0, while also preventing them from
+    doing the same to you.
+
+  aside.
+    The game does not officially support any means to
+    show the actual numbers for enemies' health, only a percentage; this is
+    largely because the actual numbers can change on some enemies depending on
+    how many players are attacking them.
+
+  p.
+    When you target an enemy (or friendly) by left-clicking on it, it will show
+    up at the top of the screen in the centre as a small picture, a health bar,
+    a short description of what it can do, and whatever effects are applied to
+    it (see #[a(href='#boons-conditions') Boons &amp; conditions], below).
+
+  p.
+    Other nearby enemies also have a thin bar above them to indicate their
+    health, just below their name.
+
+  h2 Dodging and moving
+
+  p.
+    One of the main things that makes Guild Wars 2 combat feel very fluid is
+    that almost all abilities can be activated while you are moving, and it's
+    important to do so whenever possible to avoid damage, rather than standing
+    there like a turret getting hit. The main exceptions to this are the various
+    'channelled' skills - ones where your character is performing a long sequence
+    of attacks that can take 2 or 3 seconds.
+
+  p.
+    #[dfn Dodging] is another fundamental aspect of combat: it prevents you from
+    taking any damage for a brief time, allowing you to avoid heavy attacks that
+    would otherwise take away a large amount of your health, or knock you over
+    leaving you vulnerable.
+
+  p.
+    By default, the game is set up so you can double-press on a movement key to
+    Dodge. This is unfortunate for two reasons: first, it's a little slower than
+    pressing a single dedicated Dodge key, and second it can cause you to Dodge
+    unintentionally on
+    #[a(href='https://wiki.guildwars2.com/wiki/Jumping_puzzle') Jumping Puzzles]
+    when trying to perform many small, short movements.
+
+  p.
+    I strongly recommend disabling the double-press option and binding Dodge to
+    a convenient key.
+
+  h2 Attacking enemies
+
+  p.
+    The attacks available to you depend on two things: what profession (aka
+    class) you're playinh, and the weapon(s) you have equipped. The latter point
+    is very important: different weapon types each have their particular
+    specialities, and you need to learn which ones are appropriate for a given
+    encounter.
+
+  p.
+    For example, on a Warrior, using a Hammer gives you access to attacks based
+    around controlling your enemy: knocking them down, pushing them away, or
+    weaking their attacks. Alternatively, using a Mace and a Shield together is
+    a more defensive setup, letting you block hits and interrupt attacks.
+
+  h2 Knowing your attacks
+
+  p.
+    Each skill in the game has a tooltip explaining what it does: simply move
+    the mouse pointer over it and a box appears detailing how much damage the
+    skill does, its range, and so on. Here's an example:
+
+  p.img: img(href='/skill-tooltip.png')
+
+  p.
+    The icons in the top right are important:
+
+  dl
+    dt: img(href='/skill-cast-time.png')
+    dd.
+      #[dfn Activation time]: also known as #[i cast time], this is simply how
+      long it takes to activate a skill. If this is not present, it means the
+      skill can be cast instantly,
+      #[em even during the activation of another skill].
+
+    dt: img(href='/skill-recharge.png')
+    dd.
+      #[dfn Recharge time]: also known as #[i cooldown], this is how long you
+      must wait after activating a skill before you can use it again. If this is
+      not present, there is a minimum recharge time of around half a second.
+
+  p.
+    The #[dfn range] of a skill, given in an arbitrary, unnamed unit, defines
+    the maximum distance at which you can hit an enemy with the skill.
+    #[strong If you're not in range, the skill will have a thin red bar below it],
+    like this:
+
+  p.img: img(href='/skill-out-of-range.png')
+
+  p.
+    It can be a little tricky to get used to what the different numbers mean.
+    Generally, though, 200 is short range, 600 is medium range, and 1200 is long
+    range. Getting a feel for these distances is mostly a matter of experience.
+
+  h2#boons-conditions Boons &amp; conditions
+
+  p.
+    Like other MMOs, Guild Wars 2 has the concept of persistent positive and
+    negative effects. Positive effects are split into two categories:
+
+  dl
+    dt Boons
+    dd.
+      These are short-term effects represented by an white icon on an orange
+      background, with a white border indicating the time remaining on them.
+      There are
+      #[a(href='https://wiki.guildwars2.com/wiki/Boon#List_of_boons') a small number of Boons],
+      and they're shared across Professions, and include things like
+      Regeneration, Might and so on.
+
+    dt Buffs
+    dd.
+      These are Profession-specific effects, such a Guardian's
+      #[a(href='https://wiki.guildwars2.com/wiki/Strength_in_Numbers') Strength In Numbers],
+      or effects from things like food or the environment.
+
+  p Negative effects are also split into two categories:
+
+  dl
+    dt Conditions
+    dd.
+      Like Boons these are
+      #[a(href='https://wiki.guildwars2.com/wiki/Condition#List_of_conditions') a specific set of short-term effects],
+      represented by a black icon on a red background, with a black border to
+      indicate the time remaining on them. Also like Boons, they are shared
+      across the Professions, and include things like Bleeding, Vulnerability
+      and so on.
+
+    dt Debuffs
+    dd.
+      Like Buffs, these appear as full-colour icons above your skill bar, and
+      can come from a variety of sources.
+
+  p.
+    Boons and Conditions are the primary short-term in-combat effects, usually
+    only lasting a few seconds. With the right equipment and stats, they can be
+    very potent, so it's important to decide what sort of playstyle you want to
+    focus on: do you want to use raw power to kill enemies, or melt them down
+    over time with powerful Bleeding and Burning effects? Perhaps you want to
+    support your allies with Might, increasing the damage of their attacks, or
+    provide Protection so they take less damage?
+
+  h2 Controlling enemies
+
+  p.
+    There are 4 Conditions that affect enemy movement: Cripple, Chill, Fear and
+    Immobilise. These along with other skills like Stuns, Dazes and Knockdowns
+    are what is collectively known as #[dfn Crowd Control].
+
+  p.
+    Interrupting enemy abilities and controlling their movement is an important
+    part of Guild Wars 2 combat
