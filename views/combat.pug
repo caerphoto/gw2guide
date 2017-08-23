@@ -80,20 +80,20 @@ block content
     the mouse pointer over it and a box appears detailing how much damage the
     skill does, its range, and so on. Here's an example:
 
-  p.img: img(src='/images/skill-tooldip.png')
+  p.img: img(src='/images/skill-tooltip.jpg')
 
   p.
     The icons in the top right are important:
 
-  dl
-    dt: img(src='/images/skill-cast-time.png')
+  dl.img
+    dt: img(src='/images/skill-activation-time.png')
     dd.
       #[dfn Activation time]: also known as #[i cast time], this is simply how
-      long it takes to activate a skill. If this is not present, it means the
-      skill can be cast instantly,
+      long it takes to activate a skill, in seconds. If this is not present, it
+      means the skill can be cast instantly,
       #[em even during the activation of another skill].
 
-    dt: img(src='/images/skill-recharge.png')
+    dt: img(src='/images/skill-recharge-time.png')
     dd.
       #[dfn Recharge time]: also known as #[i cooldown], this is how long you
       must wait after activating a skill before you can use it again. If this is
@@ -102,15 +102,33 @@ block content
   p.
     The #[dfn range] of a skill, given in arbitrary, unnamed units, defines the
     maximum distance at which you can hit an enemy with the skill.
-    #[strong If you're not in range, the skill will have a thin red bar below it],
-    like this:
+    #[strong If you're not in range, the skill will have a thin red bar below it].
+    On the left, in range; on the right, out of range:
 
-  p.img: img(src='/images/skill-out-of-range.png')
+  p.img
+    img(src='/images/skill-in-range.png')
+    | &nbsp;
+    img(src='/images/skill-out-of-range.png')
 
   p.
     It can be a little tricky to get used to what the different numbers mean.
     Generally, though, 200 is short range, 600 is medium range, and 1200 is long
     range. Getting a feel for these distances is mostly a matter of experience.
+
+  p.
+    Some skills have a red crosshair at the bottom of the icon, like this:
+
+  p.img: img(src='/images/skill-ground-targeted.png')
+
+  p.
+    This means you must choose where to aim them on the ground; as you might
+    expect, they are area-of-effect skills. I recommend going to Options &rarr;
+    Combat/Movement and setting the Ground Targeting option to
+    #[i Fast with Range Indicator]
+    and enabling the
+    #[i Lock Ground Target at Maximum Skill Range]
+    option. This way you won't accidentally get 'Out of range' errors when
+    trying to aim at distant points.
 
   h2#boons-conditions Boons &amp; conditions
 
@@ -119,7 +137,9 @@ block content
     negative effects. Positive effects are split into two categories:
 
   dl
-    dt Boons
+    dt
+      img(src='/images/boon-icon-vigor.png')
+      |  Boons
     dd.
       These are short-term effects represented by an white icon on an orange
       background, with a white border indicating the time remaining on them.
@@ -128,7 +148,9 @@ block content
       and they're shared across Professions, and include things like
       Regeneration, Might and so on.
 
-    dt Buffs
+    dt
+      img(src='/images/buff-icon-food.png')
+      |  Buffs
     dd.
       These are Profession-specific effects, such a Guardian's
       #[a(href='https://wiki.guildwars2.com/wiki/Strength_in_Numbers') Strength In Numbers],
@@ -137,7 +159,9 @@ block content
   p Negative effects are also split into two categories:
 
   dl
-    dt Conditions
+    dt
+      img(src='/images/condition-icon-burning.png')
+      |  Conditions
     dd.
       Like Boons these are
       #[a(href='https://wiki.guildwars2.com/wiki/Condition#List_of_conditions') a specific set of short-term effects],
@@ -146,10 +170,12 @@ block content
       across the Professions, and include things like Bleeding, Vulnerability
       and so on.
 
-    dt Debuffs
+    dt
+      img(src='/images/debuff-icon-revealed.png')
+      |  Debuffs
     dd.
-      Like Buffs, these appear as full-colour icons above your skill bar, and
-      can come from a variety of sources.
+      Like Buffs, these appear as full-colour icons, and can come from a
+      variety of sources.
 
   p.
     Boons and Conditions are the primary short-term in-combat effects, usually
@@ -158,15 +184,40 @@ block content
     focus on: do you want to use raw power to kill enemies, or melt them down
     over time with powerful Bleeding and Burning effects? Perhaps you want to
     support your allies with Might, increasing the damage of their attacks, or
-    provide Protection so they take less damage?
+    provide Protection so they take less damage? Examine your weapon and
+    utility skills and how they're affected by
+    #[a(href='/traits-skills') traits and skills]
+    to determine what works best for you.
 
   h2 Controlling enemies
 
   p.
-    There are 4 Conditions that affect enemy movement: Cripple, Chill, Fear and
-    Immobilise. These along with other skills like Stuns, Dazes and Knockdowns
-    are what is collectively known as #[dfn Crowd Control].
+    There are a number of Conditions that affect enemy movement, such as
+    Cripple, Chill and Immobilise. These along with other skills like Stuns,
+    Dazes and Knockdowns are what is collectively known as
+    #[dfn Crowd Control], or #[i CC] for short.
 
   p.
     Interrupting enemy abilities and controlling their movement is an important
-    part of Guild Wars 2 combat
+    part of Guild Wars 2 combat, not only to help you stay alive, but because
+    of they way they affect Defiance Bars.
+
+  h2 Defiance Bars
+
+  p.
+    Also known as Break Bars, these appear on powerful enemies and indicate
+    that the enemy is immune to normal Crowd Control effects. Instead, these
+    effects reduce the teal-coloured bar below the enemy's health bar. The
+    official Guild Wars 2 Wiki has
+    #[a(href='https://wiki.guildwars2.com/wiki/Defiance_Bar') a detailed explanation]
+    of the mechanics of defiance bars.
+
+  p.
+    The main thing to be aware of is when you're facing enemies with the
+    'Locked' bar type. These bars only become vulnerable to Crowd Control
+    abilities and Conditions for a short time, and reducing the bar quickly to
+    zero is often important for the success of the encounter. So, when you go
+    up against enemies like this it helps to have one or more skills equipped
+    that have strong Crowd Control effects, such as Stuns, Fears or Knockdowns.
+    You'll often see people in map chat or local chat shouting "CC!" when the
+    bar is ready to be 'broken'.

@@ -21,7 +21,8 @@ header {
   right: 0;
   background-color: #fff;
   z-index: 1;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ddd;
   background-color: #f4f4f4;
 }
 
@@ -79,7 +80,9 @@ footer {
   padding: 0.7em 1em;
   font-size: 0.8em;
   background-color: #f4f4f4;
-  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ddd;
+  box-shadow:
+    0 -2px 2px rgba(0, 0, 0, 0.05);
 }
 
 footer p {
@@ -89,6 +92,16 @@ footer p {
 p,
 aside {
   margin: 0 0 1em;
+}
+
+p.img {
+  text-align: center;
+}
+
+kbd {
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.2em;
 }
 
 section h1 {
@@ -112,9 +125,26 @@ aside {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+dl.img dt {
+  float: left;
+}
+
+dl.img dd {
+  margin-left: 60px;
+  margin-bottom: 0.5em;
+}
 
 dt {
   font-style: italic;
+}
+
+dt img {
+  vertical-align: -40%;
+}
+
+dd {
+  margin-bottom: 1em;
+  margin-left: 0;
 }
 
 dfn {
