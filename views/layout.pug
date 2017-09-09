@@ -7,10 +7,11 @@ html
     link(rel='stylesheet', href=basePath+'stylesheets/style.css')
 
   body
-    include includes/contents
+    div#grid-wrapper
+      include includes/contents
 
-    section.content
-      h1= title
-      block content
+      section#main
+        h1= title
+        block main
 
-    include includes/footer
+      include includes/footer
