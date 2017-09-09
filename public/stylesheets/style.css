@@ -38,8 +38,9 @@ header {
 }
 
 header h1 {
-  text-align: center;
+  text-align: left;
   margin: 0.4em 0;
+  padding-left: 1rem;
 }
 
 header br {
@@ -87,8 +88,11 @@ nav a:hover {
 #main {
   background-color: #fff;
   grid-column: 2/3;
-  max-width: 38em;
   padding: 0 1em;
+}
+
+#main * {
+  max-width: 38rem;
 }
 
 footer {
